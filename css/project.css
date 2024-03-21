@@ -1,0 +1,275 @@
+@font-face {
+    font-family: Beyonders;
+    src: url(../stuffs/Beyonders.otf);
+}
+
+@font-face {
+    font-family: Montserrat;
+    src: url(../stuffs/Montserrat-SemiBold.otf);
+}
+@font-face {
+    font-family: MontserratItalic;
+    src: url(../stuffs/Montserrat-SemiBoldItalic.otf);
+}
+html {
+    scroll-behavior: smooth;
+}
+
+/* ------------------------------------------------------------------- */
+
+
+/* CSS for navigation Menu */
+#navbar {
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100vw;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 999;
+}
+#navbar::before{
+    content: "";
+    position: absolute;
+    width: 100vw;
+    height: 100%;
+    opacity: 1;  /* changed to 1 */
+    z-index: -1;
+    background-color: rgb(45, 48, 39);
+    /* background-color: green; */
+}
+
+#navbar #logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: .5rem;
+    font-size: 1em;
+}
+
+
+    #navbar ul {
+        display: flex;
+        flex-direction: row;
+        list-style: none;
+        float: right;
+        flex-wrap: wrap;
+        margin-right: 55px;
+    }
+
+    #navbar li {
+        margin: 10px 10px;
+        float: right;
+        list-style: none;
+        padding: 3px;
+    }
+
+    #navbar li a {
+        text-decoration: none;
+        color: #959793;
+        font-family: Montserrat;
+        font-size: 1em;
+        padding: 1px;
+    }
+
+    #navbar a:hover {
+        border-bottom: 3px solid #e3d88f;
+        border-radius: 2px;
+        color: white;
+    }
+
+
+#navbar #logo img {
+    width: 5em;
+    height: 5em;
+    margin: 4px .7em;
+}
+
+#logo .name h2 {
+    font-family: Beyonders;
+    font-size: .9em;
+    color: #e3d88f;
+}
+
+#logo .name h3 {
+    font-family: Montserrat;
+    font-size: .9em;
+    color: white;
+}
+.fake{
+    width: 100vw;
+    height: 1px;
+}
+/* ------------------------------------------------------------------- */
+/* ------------------------------------------------------------------- */
+/* ------------------------------------------------------------------- */
+*{
+    padding: 0;
+    margin: 0;
+    
+
+}
+
+.drone{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+    margin: 0;
+    padding-top: 100px;
+    background-color: #2B2F26;
+}
+/*
+.drone img{
+    height: auto;
+    max-width: 45%;
+    margin: 30px;
+    
+
+    
+} */
+
+
+.project-heading h1{
+    padding-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #2B2F26;
+    color: #dec97b;
+    font-family: Beyonders;
+    
+}
+
+.button-gallery{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #2B2F26;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    height: 100px;
+}
+
+.btn{
+    margin: 15px;
+    font-family: Montserrat;
+    padding: 8px;
+    color: #FFFFFF;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 10%;
+    font-size: 1rem;
+    background-color: #2B2F26;
+}
+
+button:hover{
+    color: #EAD793;
+
+}
+
+
+
+button img{
+    height: 14px;
+    padding-left: 5px;
+}
+
+.wrapper{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+    background-color: #2B2F26;
+    margin: 0;
+    padding: 0;
+}
+.project{
+    margin: 40px;
+    height: 260px ;
+    width: 490px ;
+
+    box-shadow: 0px 2px 4px 2px rgba(0,0,0,0.2);
+    background-color: #FFFFFF;
+    /* border-style: dashed; */
+}
+
+.project:hover{
+    background-color: #EAD793;
+    border-color: #dec97b;
+    /* border-style: solid; */
+
+    .dot{
+        background-color: #FFFFFF;
+    }
+
+}
+h2{
+    font-family: Montserrat;
+    font-size: larger;
+
+}
+
+ul li {
+    font-family: Montserrat;
+    font-size: small;
+}
+.left img{
+    height: 220px;
+    width: 220px;
+    margin: 20px;
+    padding: 0;
+    box-shadow: 20px;
+    box-shadow: 0px 2px 4px rgba(0,0,0,0.2);
+
+    position: absolute;
+}
+
+.right{
+    position: absolute;
+    display: inline-block;
+    width: 150px;
+    height: 180px;
+    padding: 40px;
+    margin-left: 260px;
+
+}
+
+
+.date {
+    margin-top: 20px;
+    padding: 5px;
+    font-family: Montserrat;
+    font-size: small;
+    box-shadow: 0px 2px 5px 2px rgba(0,0,0,0.18);
+}
+.date img{
+    height: 18px;
+    position: absolute;
+}
+.date p{
+    padding-left: 25px;
+}
+
+.dot{
+    height: 15px ;
+    width: 15px;
+    
+    border-radius: 50%;
+    background-color:#EAD793;
+    margin: 4px;
+    top: 15px;
+    left: 469px;
+    display: inline-block;
+
+}
+
+.footer{
+    height: 300px;
+    margin-top: 40px;
+}
+
+
+
